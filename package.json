@@ -12,6 +12,6 @@
 		"start": "node server.js"
 	},
 	"engines": {
-		"node": "v10.13.0"
+		"node": "10.13.0"
 	  }
 }
