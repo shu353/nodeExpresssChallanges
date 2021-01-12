@@ -8,7 +8,7 @@ app.use((req, res, next) => {
 });
 
 getCurrentTime = () => {
-  return new Date().toDateString();
+  return new Date().toString();
 };
 
 app.get(
