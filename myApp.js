@@ -40,5 +40,13 @@ app.get("/json", (req, res) => {
 
 app.use(express.static(__dirname + "/public"));
 
+app.get("/:word/echo", (req, res) => {
+  let word = req.params.word;
+  res.json({
+    echo: word,
+  });
+  console.log(req.params.word);
+});
+
 module.exports = app;
 //as
