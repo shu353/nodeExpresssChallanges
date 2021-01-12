@@ -7,10 +7,14 @@ app.use((req, res, next) => {
   next();
 });
 
+getCurrentTime = () => {
+  return new Date().toDateString();
+};
+
 app.get(
   "/now",
   (req, res, next) => {
-    req.time = new Date().toString();
+    req.time = getCurrentTime();
     next();
   },
   (req, res) => {
